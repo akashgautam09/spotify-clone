@@ -487,7 +487,7 @@ body {
     .card {
         font-size: 1.2rem;
         width: 218px;
-        height: 330px;
+        height: 312px;
     }
 
     .cardP2 {
@@ -556,7 +556,7 @@ body {
 
 @media (min-width:824px) and (max-width:1023px) {
     .card {
-        width: 265%px;
+        width: 265px;
         height: 373px;
     }
 }
@@ -569,10 +569,10 @@ body {
     }
 }
 
-@media (min-width:575px) and (max-width:880px) {
+@media (min-width:830px) and (max-width:854px) {
     .card {
-        width: 196px;
-        height: 262px;
+        width: 245px;
+        height: 344px;
     }
 }
 
@@ -587,5 +587,10 @@ body {
     .card {
         width: 154px;
         height: 218px;
+    }
+
+    .cardContainer {
+        display: flex;
+        justify-content: space-evenly;
     }
 }

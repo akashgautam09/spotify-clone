@@ -1,13 +1,11 @@
-console.log("let's write javascript!");
-
 let songs;
 let currfolder;
 let currentsong = new Audio(); // Audio object to control song playback
 let time = document.createElement("div"); // Used to display current time and duration
 
-// ==========================
+
 // Play Music Function
-// ==========================
+
 const playmusic = (track, pause = false) => {
     currentsong.src = `/${currfolder}/` + track;
 
@@ -25,9 +23,9 @@ const playmusic = (track, pause = false) => {
     }
 }
 
-// ==========================
+
 // Time Display Function
-// ==========================
+
 function updateTimeDisplay() {
     const currentMinutes = Math.floor(currentsong.currentTime / 60);
     const currentSeconds = Math.floor(currentsong.currentTime % 60);
@@ -44,9 +42,9 @@ function updateTimeDisplay() {
     document.querySelector(".circle").style.left = (currentsong.currentTime / currentsong.duration) * 100 + "%";
 }
 
-// ==========================
+
 // Fetch Songs from Folder
-// ==========================
+
 async function getsongs(folder) {
     currfolder = folder;
 
@@ -150,9 +148,9 @@ async function displayAlbums() {
     });
 
 }
-// ==========================
+
 // Main Function
-// ==========================
+
 async function main() {
 
     displayAlbums()

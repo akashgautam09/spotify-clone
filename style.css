@@ -446,20 +446,6 @@ body {
 
 }
 
-/* 
-@media (max-width:410px) {
-    .cardContainer {
-        justify-content: center;
-        width: 98%;
-    }
-
-    .card {
-        width: 149px;
-        height: 220px;
-    }
-
-}
- */
 @media (min-width: 768px) and (max-width: 1023px) {
 
     .heading {
@@ -526,16 +512,6 @@ body {
 
 }
 
-/* @media (min-width:388px) and (max-width:485px) {
-    .card {
-        width: 156px;
-    }
-
-} */
-
-/* @media (max-width:1023px) {
-} */
-
 @media (max-width:380px) {
     .card {
         height: auto;
@@ -585,7 +561,7 @@ body {
 
 @media (max-width:485px) {
     .card {
-        width: 154px;
+        width: 140px;
         height: 218px;
     }
 

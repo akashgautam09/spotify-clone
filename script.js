@@ -48,7 +48,7 @@ function updateTimeDisplay() {
 async function getsongs(folder) {
     currfolder = folder;
 
-    let a = await fetch(`http://127.0.0.1:3000/${folder}/`);
+    let a = await fetch(`/${folder}/`);
     let response = await a.text();
 
     let div = document.createElement("div");
@@ -69,7 +69,7 @@ async function getsongs(folder) {
     // let artist = songInfo.songs && songInfo.songs[song] ? songInfo.songs[song] : "Unknown Artist";
 
     // Update song list in the UI
-    let infoResponse = await fetch(`http://127.0.0.1:3000/${folder}/info.json`);
+    let infoResponse = await fetch(`/${folder}/info.json`);
     let songInfo = await infoResponse.json();
     let songUL = document.querySelector(".songslist ul");
     songUL.innerHTML = "";
@@ -99,7 +99,7 @@ async function getsongs(folder) {
 }
 
 async function displayAlbums() {
-    let a = await fetch(`http://127.0.0.1:3000/songs/`);
+    let a = await fetch(`/songs/`);
     let response = await a.text();
     let div = document.createElement("div");
     div.innerHTML = response;
@@ -117,7 +117,7 @@ async function displayAlbums() {
 
             // console.log(folder)
             //    load metadata for albums
-            let a = await fetch(`http://127.0.0.1:3000/songs/${folder}/info.json`);
+            let a = await fetch(`/songs/${folder}/info.json`);
             let response = await a.json();
             // console.log(response);
 
